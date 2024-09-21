@@ -21,7 +21,7 @@
         <dependency>
           <groupId>com.codenameone</groupId>
           <artifactId>coderad-lib</artifactId>
-          <version>2.0-SNAPSHOT</version>
+          <version>2.0.5</version>
           <type>pom</type>
         </dependency>
 
@@ -90,7 +90,7 @@
                     <artifactId>kotlin-stdlib</artifactId>
                     <version>${kotlin.version}</version>
                 </dependency>
-        
+
                 <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-annotations-jvm -->
                 <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
                 <dependency>
@@ -138,8 +138,8 @@
                             </execution>
                             <execution>
                                 <id>test-compile</id>
-                                <goals> 
-                                    <goal>test-compile</goal> 
+                                <goals>
+                                    <goal>test-compile</goal>
                                 </goals>
                                 <configuration>
                                     <sourceDirs>
@@ -153,10 +153,10 @@
                 </plugins>
             </build>
         </profile>
-        
+
 
         <profile>
-            
+
             <id>javase</id>
             <activation>
                 <property>
@@ -191,19 +191,19 @@
             </build>
         </profile>
         <profile>
-            <!-- 
+            <!--
                 For running in simulator in process use:
                 mvn cn1:java -P simulator
-                            
+
                 Fro running in simulator in forked process use:
                 mvn cn1:simulator -P simulator
             -->
-                
+
             <id>simulator</id>
             <properties>
                 <codename1.targetPlatform>javase</codename1.targetPlatform>
             </properties>
-            
+
         </profile>
         <profile>
             <!--
@@ -214,7 +214,7 @@
             <properties>
                 <!-- Build server target type -->
                 <codename1.targetType>iphone</codename1.targetType>
-                
+
                 <!-- Used for identifying native interfaces.  Should match correct subdirectory of native -->
                 <codename1.targetPlatform>ios</codename1.targetPlatform>
             </properties>
@@ -229,7 +229,7 @@
                 <!-- Build server target type -->
                 <codename1.targetType>iphone</codename1.targetType>
                 <codename1.production>true</codename1.production>
-                
+
                 <!-- Used for identifying native interfaces.  Should match correct subdirectory of native -->
                 <codename1.targetPlatform>ios</codename1.targetPlatform>
                 <codename1.appStoreBuild>true</codename1.appStoreBuild>
@@ -359,5 +359,5 @@
 
     </build>
 
-    
+
 </project>

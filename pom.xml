@@ -25,10 +25,10 @@
     </modules>
 
 	      <properties>
-        <cn1.plugin.version>8.0-SNAPSHOT</cn1.plugin.version>
-        <cn1.version>8.0-SNAPSHOT</cn1.version>
+        <cn1.plugin.version>7.0.86</cn1.plugin.version>
+        <cn1.version>7.0.86</cn1.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	      
+
         <java.version>1.8</java.version>
         <java-tests.version>11</java-tests.version>
         <rhino.version>1.7.11</rhino.version>
@@ -37,11 +37,11 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <cn1app.name>coderad2-samples</cn1app.name>
 
-        
-        
+
+
             </properties>
 
-		  
+
 		      <dependencyManagement>
         <dependencies>
             <dependency>
@@ -62,7 +62,7 @@
                 <scope>system</scope>
                 <systemPath>${user.home}/.codenameone/CodeNameOneBuildClient.jar</systemPath>
             </dependency>
-            
+
 
         </dependencies>
     </dependencyManagement>
@@ -70,12 +70,12 @@
       <dependency>
         <groupId>com.codenameone</groupId>
         <artifactId>coderad-annotation-processor</artifactId>
-        <version>2.0-SNAPSHOT</version>
+        <version>2.0.5</version>
         <scope>provided</scope>
       </dependency>
     </dependencies>
 
-    
+
 			    <build>
         <pluginManagement>
             <plugins>
@@ -107,7 +107,7 @@
         </plugins>
     </build>
 
-    
+
 			    <repositories>
 
 
